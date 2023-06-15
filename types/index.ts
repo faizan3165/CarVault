@@ -15,8 +15,14 @@ export interface SearchManufacturerProps {
   setManufacturer?: (manufacturer: string) => void;
 }
 
+export interface OptionProps {
+  title: string;
+  value: string;
+}
+
 export interface CustomFilterProps {
   title: string;
+  options: OptionProps[];
 }
 
 export interface CarProps {
@@ -42,4 +48,21 @@ export interface CarDetailsProps {
   isOpen: boolean;
   closeModal: () => void;
   car: CarProps;
+}
+
+export interface SearchButtonProps {
+  otherClasses: string;
+}
+
+export interface AlertProps {
+  alertMsg: string;
+  setAlertMsg: (alertMsg: string) => void;
+}
+
+export interface FilterProps {
+  year: number;
+  limit: number;
+  fuel: string;
+  manufacturer: string;
+  model: string;
 }
