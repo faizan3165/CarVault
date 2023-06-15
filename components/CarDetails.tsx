@@ -8,7 +8,7 @@ import { CarDetailsProps } from "@/types";
 import { generateCarImageUrl } from "@/utils";
 
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
-  const { city_mpg, year, make, model, transmission, drive } = car;
+  const { make, model } = car;
   return (
     <Fragment>
       <Transition appear show={isOpen} as={Fragment}>

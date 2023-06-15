@@ -66,3 +66,8 @@ export interface FilterProps {
   manufacturer: string;
   model: string;
 }
+
+export interface ShowMoreProps {
+  pageNum?: number;
+  isNext?: boolean;
+}
