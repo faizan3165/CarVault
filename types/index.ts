@@ -68,6 +68,6 @@ export interface FilterProps {
 }
 
 export interface ShowMoreProps {
-  pageNum?: number;
-  isNext?: boolean;
+  pageNum: number;
+  isNext: boolean;
 }
