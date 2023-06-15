@@ -42,7 +42,7 @@ const Home = async ({ searchParams }: any) => {
             </div>
 
             <ShowMore
-              pageNum={(searchParams.pageNumber || 10) / 10}
+              pageNum={(searchParams.limit || 10) / 10}
               isNext={(searchParams.limit || 10) > allCars.length}
             />
           </section>
