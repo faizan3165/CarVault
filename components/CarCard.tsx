@@ -91,7 +91,6 @@ const CarCard = ({ car }: CarCardProps) => {
         isOpen={isOpen}
         closeModal={() => setIsOpen(false)}
         car={car}
-        key={Math.random()*1000}
       />
     </div>
   );

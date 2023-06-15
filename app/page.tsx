@@ -36,8 +36,8 @@ const Home = async ({ searchParams }: any) => {
         {!isDataEmpty ? (
           <section>
             <div className="home__cars-wrapper">
-              {allCars?.map((car, i) => (
-                <CarCard car={car} key={i} />
+              {allCars?.map((car) => (
+                <CarCard car={car} />
               ))}
             </div>
 
